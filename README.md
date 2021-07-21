@@ -1,7 +1,7 @@
 # external-storage-test-docker
 
-__Never ever use this image in production!!!__
-This image ist vor dev/test purposes only
+> :warning: **__Never ever use this image in production!!!__**
+This image ist for dev/test purposes only
 
 This docker images provides
 - a ftp server
