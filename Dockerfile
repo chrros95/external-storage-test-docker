@@ -11,7 +11,7 @@ RUN a2dissite 000-default \
   && a2enmod dav_fs \
   && mkdir -p /var/run/apache2 \
   && . /etc/apache2/envvars \
-  && echo "test:webdav:02d3e2d96a53e65f3aef3a0197ef3585" >> /etc/apache2/users.password \
+  && htpasswd -b -c /etc/apache2/users.password test test \
   && chown -R www-data:www-data /etc/apache2/users.password /var/srv/webdav /var/www
 COPY proftpd.conf /etc/proftpd/proftpd.conf
 RUN addgroup ftp \

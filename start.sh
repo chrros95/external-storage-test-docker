@@ -1,5 +1,5 @@
 #!/bin/bash
-ln -sf /dev/stdout /var/log/docker
+ln -sf /proc/1/fd/1 /var/log/docker
 isRunning=1
 start() {
   /etc/init.d/proftpd "start" >> /var/log/docker
