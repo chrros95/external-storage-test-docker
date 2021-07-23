@@ -27,5 +27,5 @@ RUN useradd -ms /bin/bash test \
   && chown test:test /var/srv/smb
 COPY start.sh .
 STOPSIGNAL SIGWINCH
-EXPOSE 80 21 20 139 445
+EXPOSE 80 21 20 139 445 30000-40000
 CMD ["bash", "start.sh"]

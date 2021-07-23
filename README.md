@@ -1,11 +1,13 @@
 # external-storage-test-docker
 
 > :warning: **__Never ever use this image in production!!!__**
-This image ist for dev/test purposes only
 
-This docker images provides
-- a ftp server
-- a webdav server
-- a smb server (share Public)
+This image is for dev/test purposes only and is highly insecure.
+So, please don't allow anyone to reach this container out of the internet as long as you know what you are doing.
 
-THe credentials are always test:test
+This docker image provides
+- an FTP server (ftp://1.2.3.4)
+- a WebDAV server (http://1.2.3.4/webdav)
+- an SMB server (smb://1.2.3.4/Public)
+
+The credentials are always test:test
